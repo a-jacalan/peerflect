@@ -1,0 +1,12 @@
+<?php
+// IMPORTANT: Copy this file to email_config.php and fill in your actual credentials
+// DO NOT commit email_config.php to version control
+
+return [
+    'host'       => 'smtp.gmail.com',     // SMTP Server
+    'username'   => 'your_email@gmail.com', // Your Gmail address
+    'password'   => 'your_app_password',    // App Password, NOT your regular password
+    'from'       => 'your_email@gmail.com', // Sender email
+    'from_name'  => 'Your App Name'         // Sender name
+];
+?>
