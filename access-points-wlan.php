@@ -8,7 +8,7 @@
     $sql = "SELECT Posts.PostID, Posts.isApproved, Posts.Title, Posts.CreatedAt, Users.ProfileImageURL 
             FROM Posts 
             INNER JOIN Users ON Posts.UserID = Users.UserID 
-            WHERE Posts.SubCategory = 'access-points-wlan' 
+            WHERE Posts.SubCategory = 'Wireless Access Points and WLANs' 
             AND Posts.isApproved = 1 
             AND (Users.isBan = 0 OR Users.isBan IS NULL)";
     $result = $conn->query($sql);

@@ -59,7 +59,7 @@ function getAverageRating($conn, $postID) {
     $stmt->execute();
     $result = $stmt->get_result();
     $row = $result->fetch_assoc();
-    return ['avg' => round($row['avg_score'], 1), 'count' => $row['count']];
+    return ['avg' => $row['avg_score'] !== null ? round($row['avg_score'], 1) : 0, 'count' => $row['count']];
 }
 
 // Function to get user's rating for a post

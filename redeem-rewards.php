@@ -11,7 +11,7 @@ if (!isset($_SESSION['id'])) {
 
 // Get user's claimable points
 $userID = $_SESSION['id'];
-$stmt = $conn->prepare("SELECT claimable_points FROM users WHERE UserID = ?");
+$stmt = $conn->prepare("SELECT claimable_points FROM Users WHERE UserID = ?");
 $stmt->bind_param("i", $userID);
 $stmt->execute();
 $result = $stmt->get_result();

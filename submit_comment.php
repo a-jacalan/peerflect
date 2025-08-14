@@ -13,17 +13,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["id"])) {
 
     try {
         // Insert the comment
-        $stmt = $conn->prepare("INSERT INTO comment (UserID, PostID, Content) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO Comment (UserID, PostID, Content) VALUES (?, ?, ?)");
         $stmt->bind_param("iis", $userID, $postID, $content);
         
         if ($stmt->execute()) {
             // Log the comment activity
-            $logStmt = $conn->prepare("INSERT INTO activitylog (UserID, Action, PostID) VALUES (?, 'commented', ?)");
+            $logStmt = $conn->prepare("INSERT INTO ActivityLog (UserID, Action, PostID) VALUES (?, 'commented', ?)");
             $logStmt->bind_param("ii", $userID, $postID);
             $logStmt->execute();
 
             // Fetch user details for the response
-            $userStmt = $conn->prepare("SELECT Username, ProfileImageURL FROM users WHERE UserID = ?");
+            $userStmt = $conn->prepare("SELECT Username, ProfileImageURL FROM Users WHERE UserID = ?");
             $userStmt->bind_param("i", $userID);
             $userStmt->execute();
             $userResult = $userStmt->get_result();

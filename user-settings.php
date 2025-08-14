@@ -17,7 +17,7 @@ $errors = [];
 $username = $_SESSION["username"];
 
 // Fetch current user details
-$sql = "SELECT * FROM users WHERE Username = ?";
+$sql = "SELECT * FROM Users WHERE Username = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $username);
 $stmt->execute();

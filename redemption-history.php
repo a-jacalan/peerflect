@@ -89,7 +89,7 @@ $stmt->execute();
 $history = $stmt->get_result();
 
 // Get user's current points
-$stmt = $conn->prepare("SELECT claimable_points FROM users WHERE UserID = ?");
+$stmt = $conn->prepare("SELECT claimable_points FROM Users WHERE UserID = ?");
 $stmt->bind_param("i", $userID);
 $stmt->execute();
 $userData = $stmt->get_result()->fetch_assoc();

@@ -9,7 +9,7 @@ require_once "check-banned.php";;
     $sql = "SELECT Posts.PostID, Posts.isApproved, Posts.Title, Posts.CreatedAt, Users.ProfileImageURL 
             FROM Posts 
             INNER JOIN Users ON Posts.UserID = Users.UserID 
-            WHERE Posts.SubCategory = 'acl' 
+            WHERE Posts.SubCategory = 'Access Control Lists (ACLs)' 
             AND Posts.isApproved = 1 
             AND (Users.isBan = 0 OR Users.isBan IS NULL)
             ORDER BY Posts.CreatedAt DESC";

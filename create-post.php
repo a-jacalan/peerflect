@@ -278,26 +278,26 @@ require_once "check-banned.php";
             subcategoryDropdown.innerHTML = ""; // Clear existing options
             switch (mainCategory) {
                 case "fundamentals":
-                    subcategoryDropdown.innerHTML += "<option value='osi'>OSI Model</option>";
-                    subcategoryDropdown.innerHTML += "<option value='tcp-ip'>TCP/IP Protocol Suite</option>";
-                    subcategoryDropdown.innerHTML += "<option value='ethernet-lan-tech'>Ethernet and LAN Technologies</option>";
-                    subcategoryDropdown.innerHTML += "<option value='wan'>WAN Technologies</option>";
-                    subcategoryDropdown.innerHTML += "<option value='ipv4-ipv6'>IPv4 and IPv6 Addressing</option>";
-                    subcategoryDropdown.innerHTML += "<option value='sub-sup-net'>Subnetting and Supernetting</option>";
+                    subcategoryDropdown.innerHTML += "<option value='OSI Model'>OSI Model</option>";
+                    subcategoryDropdown.innerHTML += "<option value='TCP/IP Protocol Suite'>TCP/IP Protocol Suite</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Ethernet and LAN Technologies'>Ethernet and LAN Technologies</option>";
+                    subcategoryDropdown.innerHTML += "<option value='WAN Technologies'>WAN Technologies</option>";
+                    subcategoryDropdown.innerHTML += "<option value='IPv4 and IPv6 Addressing'>IPv4 and IPv6 Addressing</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Subnetting and Supernetting'>Subnetting and Supernetting</option>";
                     break;
                 case "infrastracture":
-                    subcategoryDropdown.innerHTML += "<option value='routers-protocol'>Router and Routing Protocol</option>";
-                    subcategoryDropdown.innerHTML += "<option value='switches-vlan'>Switches and VLANs</option>";
-                    subcategoryDropdown.innerHTML += "<option value='access-points-wlan'>Wireless Access Points and WLANs</option>";
-                    subcategoryDropdown.innerHTML += "<option value='nat'>Network Address Translation (NAT)</option>";
-                    subcategoryDropdown.innerHTML += "<option value='qos'>Quality of Services (QoS)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Router and Routing Protocol'>Router and Routing Protocol</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Switches and VLANs'>Switches and VLANs</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Wireless Access Points and WLANs'>Wireless Access Points and WLANs</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Network Address Translation (NAT)'>Network Address Translation (NAT)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Quality of Services (QoS)'>Quality of Services (QoS)</option>";
                     break;
                 case "security":
-                    subcategoryDropdown.innerHTML += "<option value='ids'>Firewalls and Intrusion Detection Systems (IDS)</option>";
-                    subcategoryDropdown.innerHTML += "<option value='vpn'>Virtual Private Networks (VPN)</option>";
-                    subcategoryDropdown.innerHTML += "<option value='acl'>Access Control Lists (ACLs)</option>";
-                    subcategoryDropdown.innerHTML += "<option value='ssl'>Secure Shell (SSH) and Secure Sockets Layer (SSL)</option>";
-                    subcategoryDropdown.innerHTML += "<option value='hardening-techniques'>Network Hardening Techniques</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Firewalls and Intrusion Detection Systems (IDS)'>Firewalls and Intrusion Detection Systems (IDS)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Virtual Private Networks (VPN)'>Virtual Private Networks (VPN)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Access Control Lists (ACLs)'>Access Control Lists (ACLs)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Secure Shell (SSH) and Secure Sockets Layer (SSL)'>Secure Shell (SSH) and Secure Sockets Layer (SSL)</option>";
+                    subcategoryDropdown.innerHTML += "<option value='Network Hardening Techniques'>Network Hardening Techniques</option>";
                     break;
             }
         }
